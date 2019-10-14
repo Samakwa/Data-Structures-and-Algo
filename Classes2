@@ -1,0 +1,29 @@
+
+class CSCourses:
+
+  def __init__(self, name, code):
+
+
+    self.name = name
+    self.code = code
+
+Your_class = input ("Enter your class name: ")
+Class_code = input ("Enter your class code: ")
+
+c1 = CSCourses(Your_class, Class_code)
+
+print(c1.name, c1.code)
+
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+
